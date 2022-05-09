@@ -28,7 +28,7 @@ int main(void) {
 		XNextEvent(d, &e);
 
 		if (t == None) {
-			sleep(10000);
+			sleep(10);
 			t = XCreateSimpleWindow(d, r, 50, 50, 100, 100, 0, 0, 0);
 			XSetTransientForHint(d, t, f);
 			XStoreName(d, t, "transient");
