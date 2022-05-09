@@ -1392,7 +1392,7 @@ run(void)
 	{
 		if (handler[ev.type])
 			handler[ev.type](&ev); /* call handler */
-		sleep(500);
+		sleep(10);
 	}
 }
 
