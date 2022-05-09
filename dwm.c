@@ -1389,11 +1389,8 @@ run(void)
 	/* main event loop */
 	XSync(dpy, False);
 	while (running && !XNextEvent(dpy, &ev))
-	{
 		if (handler[ev.type])
 			handler[ev.type](&ev); /* call handler */
-		sleep(1);
-	}
 }
 
 void
